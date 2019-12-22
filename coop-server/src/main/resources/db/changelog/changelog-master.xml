@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <include file="/db/changelog/club-create-1.xml"/>
+    <include file="/db/changelog/club-insert-2.xml"/>
+    <include file="/db/changelog/role-create-3.xml"/>
+    <include file="/db/changelog/role-insert-4.xml"/>
+    <include file="/db/changelog/user-create-5.xml"/>
+    <include file="/db/changelog/user-insert-6.xml"/>
+    <include file="/db/changelog/user-roles-create-7.xml"/>
+    <include file="/db/changelog/user-club-foreignkey-8.xml"/>
+    <include file="/db/changelog/report-create-9.xml"/>
+    <include file="/db/changelog/user-roles-insert-10.xml"/>
+    <include file="/db/changelog/product-type-create-11.xml"/>
+    <include file="/db/changelog/product-create-12.xml"/>
+    <include file="/db/changelog/loan-create-13.xml"/>
+    <include file="/db/changelog/loan-product-create-14.xml"/>
+</databaseChangeLog>

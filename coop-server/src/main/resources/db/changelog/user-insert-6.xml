@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="coopadmin" id="6">
+        <insert tableName="user">
+            <column name="id" valueNumeric="1"/>
+            <column name="firstname" value="Pierre-Francois"/>
+            <column name="lastname" value="Fiat"/>
+            <column name="username" value="pfiat"/>
+            <column name="password" value="$2a$10$zgrGB/sRHuUdvzM3L0yXYeVKHb.CPHX.tDjUzBkMFhpBERPkZWLxS"/>
+            <column name="email" value="pf.fiat@gmail.com"/>
+            <column name="phone" valueNumeric="0678847233"/>
+            <column name="club_id" valueNumeric="1"/>
+        </insert>
+        <insert tableName="user">
+            <column name="id" valueNumeric="2"/>
+            <column name="firstname" value="Basile"/>
+            <column name="lastname" value="Masse"/>
+            <column name="username" value="bmasse"/>
+            <column name="password" value="$2a$10$zgrGB/sRHuUdvzM3L0yXYeVKHb.CPHX.tDjUzBkMFhpBERPkZWLxS"/>
+            <column name="email" value="basilemasse@mac.com"/>
+            <column name="phone" valueNumeric="0606060606"/>
+            <column name="club_id" valueNumeric="1"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
